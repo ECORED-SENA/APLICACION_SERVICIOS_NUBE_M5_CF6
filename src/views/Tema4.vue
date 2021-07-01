@@ -21,8 +21,9 @@
       b-card(no-body='')
         b-tabs(pills='' card='' vertical='')
           b-tab(disabled="true")
-            template(#title)
+            template(#title).indicador__container(active="true")
               h3.text-center.mb-0.pb-4.pt-4(style="color:#1565C0;") Proceso de montaje del contenedor
+              .indicador--click
           b-tab(active="true")
             template(#title)
               div.pt-3(style="border-top:1px #B2E6FF solid;")

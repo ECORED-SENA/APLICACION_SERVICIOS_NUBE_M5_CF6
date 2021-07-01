@@ -28,7 +28,8 @@
       .row
         .col.mb-3
           figure
-            img#balanza1.caja_escalada_hover(src="@/assets/curso/tema1/2.svg" style="cursor:pointer;" @click="showInfoBalanza(1)" v-bind:class="{balanza__activa: balanza1.active}")
+            img#balanza1.caja_escalada_hover.indicador__container(src="@/assets/curso/tema1/2.svg" style="cursor:pointer;" @click="showInfoBalanza(1)" v-bind:class="{balanza__activa: balanza1.active}")
+            .indicador--click(v-if="mostrarIndicador")
         .col.mb-3
           figure
             img#balanza2.caja_escalada_hover(src="@/assets/curso/tema1/3.svg" style="cursor:pointer;" @click="showInfoBalanza(2)" v-bind:class="{balanza__activa: balanza2.active}")
@@ -43,7 +44,7 @@
             img#balanza5.caja_escalada_hover(src="@/assets/curso/tema1/6.svg" style="cursor:pointer;" @click="showInfoBalanza(5)" v-bind:class="{balanza__activa: balanza5.active}")
 
     .col-md-9.m-auto.mt-4
-      .p-5.fondo__barco
+      .pt-5.pb-5.fondo__barco
         br
         br
         .col-md-8.m-auto
@@ -81,6 +82,7 @@
 export default {
   name: 'Tema1',
   data: () => ({
+    mostrarIndicador: true,
     balanza1: {
       active: true,
       text: `<strong>Disminución de gastos:</strong> requieren menos recursos del sistema comparado con sistema de virtualización tradicionales.`,
@@ -114,6 +116,7 @@ export default {
   },
   methods: {
     showInfoBalanza(value) {
+      this.mostrarIndicador = false
       this.balanza1.active = false
       this.balanza2.active = false
       this.balanza3.active = false

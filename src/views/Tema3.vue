@@ -31,9 +31,10 @@
       b-card(no-body='')
         b-tabs(pills='' card='' vertical='')
           b-tab(disabled="true")
-            template(#title)
+            template(#title).indicador__container(active="true")
               h3.text-center.mb-0.pb-4.pt-4(style="color:#1565C0;") Proceso de instalación #[br] de docker
-          b-tab(active="true")
+              .indicador--click
+          b-tab
             template(#title)
               div.pt-3(style="border-top:1px #B2E6FF solid;")
                 i.fas.fa-caret-right
