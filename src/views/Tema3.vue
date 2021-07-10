@@ -66,7 +66,7 @@
                 img(src="@/assets/curso/tema3/3.png")
                 figcaption Instalación Docker Desktop 3.4.0.
               .p-4.mt-2(style="background-color:#F6F6F6;")
-                p Una vez se determina la configuración deseada se inicia el proceso de instalación el cual al finalizar solicitará el reinicio del sistema operativo comose muestra en la figura 4 y realizará unas actualizaciones finales mientras reinicia la máquina.
+                p Una vez se determina la configuración deseada se inicia el proceso de instalación el cual al finalizar solicitará el reinicio del sistema operativo como se muestra en la figura 4 y realizará unas actualizaciones finales mientras reinicia la máquina.
           b-tab
             template(#title)
               div.pt-3(style="border-top:1px #B2E6FF solid;")
@@ -139,10 +139,10 @@
     br
     .cajon.color-acento-botones.p-4.mb-4.mt-5.caja_escalada_hover.row.fade-in-image.caja_flotante_rosada(data-aos="fade-up")
       .row
-        .col-auto.mb-3
+        .col-md-2.mb-3
           figure
             img.imagen_flotante_animada(src="@/assets/curso/tema3/primera.png")
-        .col.mt-3
+        .col-md-10.mt-3
           p Adicionalmente, una vez finaliza exitosamente la instalación, el sistema ofrece un pequeño tutorial para el uso de la herramienta entre las que se encuentran las acciones más comunes a realizar como lo son las actividades de clonación de un repositorio, la construcción de una imagen a partir de esta clonación y su ejecución como contenedor de Docker. #[strong Se recomienda ejecutar el tutorial completo para así determinar que su instalación y configuración está bien definida:]
 
     br
@@ -174,7 +174,7 @@
                 img(src="@/assets/curso/tema3/11.png")
                 figcaption Fuente. Tutorial Docker Desktop 3.4.0
               .p-4.mt-2(style="background-color:#F6F6F6;")
-                p Acción de clonar repositorio.
+                p Acción de construir imagen desde repositorio.
 
           b-tab(active="true")
             template(#title)

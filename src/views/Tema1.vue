@@ -28,29 +28,31 @@
       .row
         .col.mb-3
           figure
-            img#balanza1.caja_escalada_hover.indicador__container(src="@/assets/curso/tema1/2.svg" style="cursor:pointer;" @click="showInfoBalanza(1)" v-bind:class="{balanza__activa: balanza1.active}")
+            img#balanza1.indicador__container(src="@/assets/curso/tema1/2.svg" style="cursor:pointer;" @click="showInfoBalanza(1)" v-bind:class="{balanza__activa: balanza1.active}")
             .indicador--click(v-if="mostrarIndicador")
         .col.mb-3
           figure
-            img#balanza2.caja_escalada_hover(src="@/assets/curso/tema1/3.svg" style="cursor:pointer;" @click="showInfoBalanza(2)" v-bind:class="{balanza__activa: balanza2.active}")
+            img#balanza2(src="@/assets/curso/tema1/3.svg" style="cursor:pointer;" @click="showInfoBalanza(2)" v-bind:class="{balanza__activa: balanza2.active}")
         .col.mb-3
           figure
-            img#balanza3.caja_escalada_hover(src="@/assets/curso/tema1/4.svg" style="cursor:pointer;" @click="showInfoBalanza(3)" v-bind:class="{balanza__activa: balanza3.active}")
+            img#balanza3(src="@/assets/curso/tema1/4.svg" style="cursor:pointer;" @click="showInfoBalanza(3)" v-bind:class="{balanza__activa: balanza3.active}")
         .col.mb-3
           figure
-            img#balanza4.caja_escalada_hover(src="@/assets/curso/tema1/5.svg" style="cursor:pointer;" @click="showInfoBalanza(4)" v-bind:class="{balanza__activa: balanza4.active}")
+            img#balanza4(src="@/assets/curso/tema1/5.svg" style="cursor:pointer;" @click="showInfoBalanza(4)" v-bind:class="{balanza__activa: balanza4.active}")
         .col.mb-3
           figure
-            img#balanza5.caja_escalada_hover(src="@/assets/curso/tema1/6.svg" style="cursor:pointer;" @click="showInfoBalanza(5)" v-bind:class="{balanza__activa: balanza5.active}")
+            img#balanza5(src="@/assets/curso/tema1/6.svg" style="cursor:pointer;" @click="showInfoBalanza(5)" v-bind:class="{balanza__activa: balanza5.active}")
 
-    .col-md-9.m-auto.mt-4
+    .col-md-12.m-auto.mt-4
       .pt-5.pb-5.fondo__barco
         br
         br
+        br
+        br
         .col-md-8.m-auto
-          span.text-barco.fade-in-image(v-html="texto_barco")
+          p.p-2.text-barco.fade-in-image(v-html="texto_barco")
 
-    .col-md-10.m-auto.mt-3
+    .col-md-12.m-auto.mt-3
       figure
         img.imagen_flotante_animada(src="@/assets/curso/tema1/8.svg")
 
@@ -208,13 +210,12 @@ export default {
 .cajon.color-acento-botones
   background-color: #FFE7C4
 .balanza__activa
-  position: relative
-  bottom: -4.5pc
-  transition: transform 1s linear
-  -o-transition: transform 1s linear
-  -ms-transition: transform 1s linear
-  -moz-transition: transform 1s linear
-  -webkit-transition: transform 1s linear
+  transform: translateY(5pc)
+  -webkit-transition: transform 0.4s linear
+  -moz-transition: transform 0.4s linear
+  -o-transition: transform 0.4s linear
+  -ms-transition: transform 0.4s linear
+  transition: transform 0.4s linear
 .text-barco
   transition: transform 0.4s linear
   -o-transition: transform 0.4s linear
@@ -223,6 +224,6 @@ export default {
   -webkit-transition: transform 0.4s linear
 .fondo__barco
   background: url('../assets/curso/tema1/7.svg')
-  background-size: 100% 100%
+  background-size: cover
   background-position: center center
 </style>

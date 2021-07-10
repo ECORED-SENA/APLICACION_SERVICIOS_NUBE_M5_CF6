@@ -11,7 +11,7 @@
     
     .col-md-8.m-auto
       figure
-        img.imagen_flotante_animada(src="@/assets/curso/introduccion/1.svg" alt="Introducción")
+        img.imagen_flotante_animada(src="@/assets/curso/introduccion/1.png" alt="Introducción")
 
     br
     p.mt-5(data-aos="fade-up") En este componente formativo se profundizará sobre los modelos de virtualización a nivel del sistema operativo, adicionalmente se desarrollarán ejercicios que facilitarán el conocimiento a la plataforma Docker la cual es ampliamente utilizada por la industria de desarrollo de software.

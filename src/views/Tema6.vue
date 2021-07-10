@@ -20,6 +20,7 @@
     .col-md-8.m-auto.mt-5
       figure(data-aos="fade-up")
         img.caja_escalada_hover(src="@/assets/curso/tema6/1.svg")
+        figcaption Nota: Novato (2019).
 
     p.mt-5 A continuación se deberá realizar un ejemplo de imágenes y contenedores.
 

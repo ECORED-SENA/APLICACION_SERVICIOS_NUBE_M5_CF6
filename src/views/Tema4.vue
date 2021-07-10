@@ -15,8 +15,6 @@
         .col.mt-3
           p Es un servicio proporcionado por la compañía Docker Inc donde se puede almacenar, compartir y extraer imágenes para crear contenedores de Docker. Este servicio requiere la creación de una cuenta de usuario y funciona muy similar a como lo hacen los repositorios de archivos en la nube. A continuación presentamos cómo hacerlo.
 
-    p.mt-5(data-aos="fade-up") El primer paso es ingresar a Docker hub para ver si existen imágenes que se pueden reutilizar para el montaje del contenedor, en este caso el procedimiento a realizar será montar un contenedor con una imagen del sistema operativo ubuntu, luego ejecutamos este contenedor para  instalar sobre el contenedor mysql y realizaremos unas pruebas. Desde la página de docker hub podemos usar el buscador para listar todas las imágenes que se han compartido de forma pública y que podrán reutilizarse para el montaje de nuestros propios contenedores.
-
     div.mt-5
       b-card(no-body='')
         b-tabs(pills='' card='' vertical='')
@@ -33,7 +31,7 @@
               figure
                 img(src="@/assets/curso/tema4/1.png")
               .p-4.mt-2(style="background-color:#F6F6F6;")
-                p Para crear una cuenta de usuario debe acceder a la siguiente dirección https://hub.docker.com y diligenciar el formulario indicando el ID, email y password.
+                p Para crear una cuenta de usuario debe acceder a la siguiente dirección #[a(href="https://hub.docker.com") https://hub.docker.com] y diligenciar el formulario indicando el ID, email y password.
 
           b-tab
             template(#title)
