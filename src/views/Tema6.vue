@@ -34,7 +34,7 @@
               .h5.mb-0 Ejemplo de imágenes y contenedores.
               p Este PDF nos muestra cómo crear en nuestra máquina local un servidor de ubuntu con mysql usando la tecnología de contenedores.
             .col-sm-auto
-              a.boton.boton--b.color-acento-secundario(:href="obtenerLink('downloads/imgycontenedores.pdf')" target="_blank")
+              a.boton.boton--b.color-acento-secundario(:href="obtenerLink('downloads/imgycontenedores-1.pdf')" target="_blank")
                 span(style="color: #12263F !important;") Descargar
                 i.fas.fa-file-download(style="color: #12263F !important;")
 

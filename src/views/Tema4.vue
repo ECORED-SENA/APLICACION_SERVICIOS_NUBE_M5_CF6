@@ -31,7 +31,7 @@
               figure
                 img(src="@/assets/curso/tema4/1.png")
               .p-4.mt-2(style="background-color:#F6F6F6;")
-                p Para crear una cuenta de usuario debe acceder a la siguiente dirección #[a(href="https://hub.docker.com") https://hub.docker.com] y diligenciar el formulario indicando el ID, email y password.
+                p Para crear una cuenta de usuario debe acceder a la siguiente dirección #[a(href="https://hub.docker.com" target="_blank") https://hub.docker.com] y diligenciar el formulario indicando el ID, email y password.
 
           b-tab
             template(#title)
