@@ -76,7 +76,7 @@
                 img(src="@/assets/curso/tema4/5.png")
                 figcaption Acción de compartir contenedor en Docker Hub2
               .p-4.mt-2(style="background-color:#F6F6F6;")
-                p En esta última parte por el usuario las veces que la del tutorial de docker se pretende compartir la imagen creada en el repositorio disponible del usuario de Docker Hub asociado, la cual se puede visualizar directamente desde la página de Docker Hub y podrá ser reutilizada necesite.
+                p En esta última parte el usuario podrá crear y reutilizar la información del repositorio las veces que lo necesite, asociando la cuenta Docker Hub, la cual se puede visualizar directamente desde la página de navegación.
 
           b-tab
             template(#title)
