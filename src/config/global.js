@@ -121,7 +121,7 @@ export default {
       referencia:
         'López, G. (2018). Virtualización basada en contenedores y SD-WAN. Teldat Blog - Conectando el mundo.',
       link:
-        'https://www.teldat.com/blog/es/contenedores-contenerizacion-virtualizacion-de-sistema-operativo-sd-wan/',
+        'https://www.teldat.com/blog/es/virtualizacion-basada-en-contenedores-y-sd-wan/',
     },
     {
       referencia: 'NetApp. (2019). ¿Qué son los contenedores? NetApp.',
